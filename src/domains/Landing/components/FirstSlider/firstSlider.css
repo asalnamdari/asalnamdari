@@ -1,0 +1,178 @@
+
+    #third-frame {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        overflow: hidden;
+    }
+    #lamp {
+        position: absolute;
+        top: -500px;
+        animation: lamp 500ms 1s forwards;
+    }
+    @keyframes lamp {
+        from {
+            top: -500px;
+        }
+        to {
+            top: -180px;
+        }
+    }
+    
+    #light {
+        width: 1300px;
+        position: absolute;
+        top: 205px;
+        opacity: 0;
+        animation: opacity 1s 1.5s forwards;
+    }
+    
+    @keyframes light {
+        from {visibility: hidden;}
+        to {visibility: visible;}
+    }
+    @keyframes opacity {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+    #underLight {
+        width: 500px;
+        position: absolute;
+        top: 420px;
+        opacity: 0;
+        animation: opacity 1s 1.8s forwards;
+    }
+    #underLightUl {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 730px;
+        opacity: 0;
+        animation: opacity 1s 1.8s forwards;
+    }
+    #underLightUl p {
+        font-size: 11pt;
+        color: white;
+    }
+    #underLightUl div {
+        background-color: red;
+        border-radius: 15px;
+        margin-top: 40px;
+    }
+    
+    .underLightUl-container{
+        display: flex;
+        justify-content:center;
+        color: white;
+        padding: 3px;
+        margin: 0;
+        width: 600px;
+    }
+    .underLightUl-container li {
+        list-style-type: none;
+        font-size: 12pt;
+        display: flex;
+        margin-left: 20px;
+    }
+    .underLightUl-container li:nth-child(3) {
+        margin-left: 100px;
+    }
+    .underLightUl-container img {
+        margin-left: 15px;
+    }
+    .underLightUl-container a {
+        color: white;
+    }
+
+    #find-intrest:hover {
+        font-weight: 900;
+    }
+
+
+
+
+@media screen and (max-height: 920px) {
+    #underLight {
+        transform: scale(0.8);
+        top: 350px;
+    }
+    #underLightUl {top: 600px;}
+    #underLightUl p {font-size: 9pt;}
+    .underLightUl-container li {margin-left: 15px;}
+    .underLightUl-container img {
+        transform: scale(0.85);
+        margin-left: 5px;
+    }
+    .underLightUl-container{
+        width: 500px;
+    }
+}
+@media screen and (max-height: 760px) {
+    #lamp {transform: scale(0.7);}
+    @keyframes lamp {
+        to {top: -180px;}
+    }
+    #light {
+        width: 970px;
+        top: 150px;
+    }
+    #underLight {
+        transform: scale(0.6);
+        top: 220px;
+    }
+    #underLightUl {top: 450px;}
+    #underLightUl p {font-size: 7pt;}
+    .underLightUl-container li {margin-left: 15px;}
+    .underLightUl-container img {
+        margin-left: 5px;
+        transform: scale(0.7);
+    }
+    .underLightUl-container{
+        width: 400px;
+    }
+}
+
+@media all and (orientation : portrait) {
+    #lamp {
+        transform: scale(0.5);
+    }
+    @keyframes lamp {
+        to {
+            top: -70px;
+        }
+    }
+    #light {
+        transform: scaleX(0.74);
+        width: 800px;
+        top: 224px;
+    }
+    #underLight {
+        transform: scale(0.4);
+        top: 270px;
+    }
+    #underLightUl {
+        top: 520px;
+    }
+    #underLightUl p {font-size: 6pt;}
+    #underLightUl>p {
+        font-size: 5pt;
+    }
+    .underLightUl-container{
+        padding: 0;
+        padding-right: 20px;
+    }
+    .underLightUl-container li:nth-child(3) {
+        margin-left: 20px;
+    }
+    .underLightUl-container{
+        width: 300px;
+    }
+}

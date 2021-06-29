@@ -1,0 +1,17 @@
+src/serviceWorker.ts
+
+node_modules
+coverage
+/.next
+/.idea/
+/out
+/.vscode
+
+sonar
+**/sonar
+.scannerwork
+
+test-report.*
+
+*.generated.tsx
+*.generated.ts

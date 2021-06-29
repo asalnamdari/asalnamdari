@@ -1,0 +1,16 @@
+<svg
+    id="jasmijn_web_ico_arrow_01"
+    xmlns="http://www.w3.org/2000/svg"
+    width="24"
+    height="24"
+    viewBox="0 0 24 24"
+  >
+    <rect id="container" width="24" height="24" fill="none" />
+    <path
+      id="jasmijn_web_ico_arrow_01-2"
+      data-name="jasmijn_web_ico_arrow_01"
+      d="M23.707,117.629a1,1,0,0,0-1.414,0L12,127.922,1.707,117.629a1,1,0,0,0-1.414,1.414l11,11a1,1,0,0,0,1.414,0l11-11A1,1,0,0,0,23.707,117.629Z"
+      transform="translate(0 -111.336)"
+      fill='#52646f'
+    />
+  </svg>

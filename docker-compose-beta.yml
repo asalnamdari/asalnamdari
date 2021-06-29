@@ -1,0 +1,14 @@
+version: '3.3'
+
+services:
+  beta:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: always
+    container_name: 'beta-parse-landing'
+    ports:
+      - 127.0.0.1:8082:3000
+  #    environment:
+  #      - /srv/env/beta-parse-landing.env:/app/.env
+  #      - /srv/env/beta-parse-landing.env:/app/.env.production
